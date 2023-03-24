@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mini Homework 1</title>
+        <link rel = "stylesheet" href = "mhw1.css">
+        <meta name = "viewport" content = "width = device-width, initial scale 1">
+
+        <!-- Font utilizzati -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+
+        <nav> <!-- Barra di navigazione: rimane fissa sulla sinistra-->
+            <!-- Non esistono altre pagine, i link non portano a nulla -->
+            <a class="button" href=""> Home</a> 
+            <a class="button" href=""> Contatti</a>
+            <a class="button" href=""> Lista</a>
+            <a class="button" href=""> Logout</a>
+            <a class ="button" id="menumobile" href="">Menu</a>
+        </nav>
+        
+        <!-- Header: contiene un titolo su un'immagine di sfondo coperta da un livello nero semitrasparente -->
+        <header>
+            <h1 id = "header-title">I miei 5 tè preferiti</h1>
+            <div id = "overlay"></div>
+        </header>
+        
+        <!-- Immagine circolare che si sovrappone all'header -->
+        <div id = "img-container">
+            <img id = "round-pic" src = "profile-pic.jpg">
+        </div>
+
+        <div id = "info">
+            <h3 id = "author">Giuseppe Dibartolo</h3>
+            <span id = "intro">Ultimo Aggiornamento: oggi</span>
+        </div>
+
+        <!-- Prima sezione di contenuto -->
+        <section>
+            <div class = "tag">
+                <h1>1.</h1>
+            </div>
+
+            <div class = "content">
+                <h1>Tè Verde</h1>
+                <h6>Voto 7.5</h6>
+                <span class = "desc">
+                    Il tè verde è conosciuto per il suo sapore leggermente amaro e erbaceo, e contiene una serie di composti benefici per la salute, come antiossidanti.
+                    Viene spesso consumato come bevanda calda o fredda e può essere aromatizzato con erbe o frutta per creare una vasta gamma di sapori.
+                </span>
+                <h3>Semplice</h3>
+                <img class = "content-img" src = "green-tea.jpg">
+
+            </div>
+        </section>
+
+        <!-- Seconda sezione di contenuto -->
+        <section>
+            <div class = "tag">
+                <h1>2.</h1>
+            </div>
+
+            <div class = "content">
+                <h1>Tè Al Limone</h1>
+                <h6>Voto 7.5</h6>
+                <span class = "desc">
+                    Questo tè può essere preparato utilizzando foglie di tè nero o verde, a cui viene aggiunto il succo di limone o scorza di limone fresca per insaporirlo.
+                    In alternativa, ci sono anche bustine di tè pre-confezionate al limone disponibili in commercio. Il tè al limone è popolare per la sua capacità di fornire una bevanda rinfrescante e leggermente acida,
+                    che può essere servita calda o fredda e con o senza zucchero a seconda delle preferenze personali.
+                </span>
+                <h3>Dolce</h3>
+                <img class = "content-img" src = "lemon-tea.jpg">
+
+            </div>
+        </section>
+
+        <!-- Terza sezione di contenuto -->
+        <section>
+            <div class = "tag">
+                <h1>3.</h1>
+            </div>
+
+            <div class = "content">
+                <h1>Tè Alla Menta</h1>
+                <h6>Voto 8</h6>
+                <span class = "desc">
+                    Il tè alla menta è una varietà di tè aromatizzato con foglie di menta, che conferiscono alla bevanda un sapore fresco, mentolato e piacevolmente rinfrescante.
+                </span>
+                <h3>Fresco</h3>
+                <img class = "content-img" src = "mint-tea.jpg">
+
+            </div>
+        </section>
+
+
+        <!-- Quarta sezione di contenuto -->
+        <section>
+            <div class = "tag">
+                <h1>4.</h1>
+            </div>
+
+            <div class = "content">
+                <h1>Tè Earl Grey</h1>
+                <h6>Voto 9</h6>
+                <span class = "desc">
+                    Il tè Earl Grey è una varietà di tè nero aromatizzato con l'essenza di olio di bergamotto, un agrume che cresce principalmente in Italia.
+                    Questa combinazione unica di tè nero e bergamotto conferisce al tè Earl Grey un sapore floreale e fruttato, con un aroma intenso e distintivo.
+                </span>
+                <h3>Inebriante</h3>
+                <img class = "content-img" src = "earl-grey.jpg">
+
+            </div>
+        </section>
+
+        <!-- Quinta sezione di contenuto -->
+        <section>
+            <div class = "tag">
+                <h1>5.</h1>
+            </div>
+
+            <div class = "content">
+                <h1>Tè Arancia e Cannella</h1>
+                <h6>Voto 10</h6>
+                <span class = "desc">
+                    Il tè arancia e cannella è popolare per il suo sapore caldo e accogliente, che lo rende particolarmente adatto per le fredde serate invernali. Inoltre, sia l'arancia che la cannella sono ricchi di antiossidanti e composti benefici per la salute, il che rende questo tè una scelta sana e gustosa per gli amanti del tè.
+                    Il tè arancia e cannella può essere consumato al naturale o con un po' di zucchero o miele, a seconda delle preferenze personali.
+                </span>
+                <h3>Caloroso</h3>
+                <img class = "content-img" src = "cinnamon-orange-tea.jpg">
+
+            </div>
+        </section>
+
+        <footer>
+            <h4 class = "footer-text">Giuseppe Dibartolo</h4>
+            <h4 class = "footer-text">1000016153</h4>
+            <h4 class = "footer-text">AA 2022/2023</h4>
+        </footer>
+
+    </body>
+
+</html>

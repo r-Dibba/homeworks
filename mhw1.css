@@ -1,0 +1,285 @@
+
+/* VARIABILI: Per la color palette */
+:root{
+    --color-green: rgb(112, 115, 41);
+    --color-beige: rgb(242, 195, 107);
+    --color-brown: rgb(166, 110, 41);
+    --color-salmon: rgb(242, 143, 56);
+    --color-orange: rgb(191, 73, 4);
+}
+
+/* STILE DELLA NAVBAR */
+nav{
+    /* Proprietà flex per disporre i pulsanti verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(112, 115, 41, .8);
+
+    border-radius: 5px;
+    
+    /* La navbar verticale rimane fissa a sinistra*/
+    position: fixed;
+    top: 33.33vh;
+    height: 30vh;
+    
+    width: 8vw;
+
+    margin-top: 5px;
+
+}
+
+#menumobile{
+    display: none;
+
+}
+
+.button{
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+
+    font-size: 1em;
+    font-family: 'Patua One', cursive;
+    text-decoration: none;
+
+    color: yellowgreen;
+    background-color: blanchedalmond;
+
+    width: 75%;
+    height: 15%;
+
+    padding: 5%;
+}
+
+
+a:visited{
+    color: var(--color-green);
+}
+
+a:hover{
+    color: var(--color-salmon);
+}
+
+/* STILE DELL'HEADER */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 490px;
+
+    border: 5px solid var(--color-green);
+
+    position: relative;
+
+    z-index: -1;
+}
+
+#img-container{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+#round-pic{
+    border-radius: 100%;
+    border: 5px solid var(--color-green);
+
+    height: 90px;
+    width: 90px;
+
+    margin-top: -50px;
+    margin-bottom: 0px;
+
+    z-index: 1;
+}
+
+#header-title{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4em;
+    font-weight: lighter; /* Il font che ho scelto era troppo 'spesso'*/
+
+    color: white;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+/* STILE INTRODUZIONE */
+body{
+    background-color: blanchedalmond;
+
+    margin: 0px 0px 0px 0px;
+}
+
+#info{
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    width: 100vw;
+
+    margin-bottom: 60px;
+
+}
+
+#author{
+    margin-top: 0;
+}
+
+#intro{
+    font-style: italic;
+}
+
+/* STILE DELLE SECTION */
+section{
+    display: flex;
+
+    width: 100vw;
+}
+
+h1, h6, h3{
+    font-family: 'Calistoga', cursive;
+    font-weight: lighter;
+}
+
+.tag{
+    height: 200px;
+
+    margin-left: calc(((100vw - 66.67vw) / 2) - 40px );
+
+    text-align: right;
+}
+
+.tag h1{
+    margin-right: 40px;
+
+    color: var(--color-brown)
+}
+
+.content{
+    text-align: center;
+
+    width: 66.67vw;
+
+    margin-bottom: 120px;
+    margin-right: calc((100vw - 66.67vw) / 2);
+
+    background-color: white;
+    border-radius: 8px;
+
+    padding: 0px 5px 5px
+}
+
+.content-img{
+    width: 500px;
+    height: 300px;
+
+    border-radius: 8px;
+}
+
+.content h1{
+    text-align: left;
+    color: var(--color-salmon);
+}
+
+h6{
+    text-align: left;
+    margin: 0px;
+
+    color: var(--color-brown);
+}
+
+.content h3{
+    text-align: left;
+    margin: 20px 0px;
+
+    color: var(--color-orange);
+}
+
+.desc{
+    font-family: 'Signica', sans-serif;
+    line-height: 20px;
+    text-align: left;
+    display: block;
+    margin: 20px 0px;
+
+}
+
+/* STILE DEL FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+    height: 10vh;
+    border-radius: 5px;
+
+    color: var(--color-green);
+    background-color: var(--color-beige);
+}
+
+/* MEDIA QUERY PER LA VISUALIZZAZIONE MOBILE */
+@media (max-width: 780px){
+
+
+    #header-title{
+        font-size: 3em;
+    }
+
+    .content-img{
+        width: 60vw;
+    }
+
+    section{
+        justify-content: center;
+    }
+
+    .content{
+        margin-right: 0;
+    }
+
+    .tag{
+        margin-left: 0;
+    }
+
+    .tag h1{
+        margin-right: 6px;
+    }
+
+    nav{
+        height: 80px;
+        width: 80px;
+        top: 0;
+    }
+
+    .button{
+        display: none;
+        height: 60%;
+        width: 70%;
+    }
+
+    #menumobile{
+        display: block;
+
+    }
+}
