@@ -102,7 +102,6 @@ header{
     margin-top: -50px;
     margin-bottom: 0px;
 
-    z-index: 1;
 }
 
 #header-title{
@@ -152,6 +151,7 @@ body{
 /* STILE DELLE SECTION */
 section{
     display: flex;
+    justify-content: center;
 
     width: 100vw;
 }
@@ -163,8 +163,6 @@ h1, h6, h3{
 
 .tag{
     height: 200px;
-
-    margin-left: calc(((100vw - 66.67vw) / 2) - 40px );
 
     text-align: right;
 }
@@ -181,7 +179,6 @@ h1, h6, h3{
     width: 66.67vw;
 
     margin-bottom: 120px;
-    margin-right: calc((100vw - 66.67vw) / 2);
 
     background-color: white;
     border-radius: 8px;
